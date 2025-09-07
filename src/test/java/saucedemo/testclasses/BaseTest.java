@@ -39,13 +39,11 @@ public class BaseTest {
                 break;
 
             case "chrome":
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--disable-gpu");
-                chromeOptions.addArguments("--no-sandbox");
-                chromeOptions.addArguments("--remote-allow-origins=*");
-                driver = new ChromeDriver(chromeOptions);
+            	WebDriverManager.chromedriver().setup();
+            	ChromeOptions chromeOptions = new ChromeOptions();
+            	chromeOptions.addArguments("--headless", "--disable-gpu", "--no-sandbox", "--remote-allow-origins=*");
+            	driver = new ChromeDriver(chromeOptions);
+
                 break;
 
             case "firefox":
