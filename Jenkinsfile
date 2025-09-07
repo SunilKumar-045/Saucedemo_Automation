@@ -41,6 +41,6 @@ post {
        }
        failure {
            echo 'Pipeline failed.'
-       }
+      }
    }
 }
