@@ -20,26 +20,14 @@
     <version>1.18.34</version>
     <scope>provided</scope>
 </dependency>
- <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.11.0</version>
-        <scope>test</scope>
-    </dependency>
+ 
+        
 
     <!-- Extent Reports (if not already added) -->
-    <dependency>
-        <groupId>com.aventstack</groupId>
-        <artifactId>extentreports</artifactId>
-        <version>5.0.9</version>
-    </dependency>
+    
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.34.0</version>
-		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		
@@ -57,11 +45,34 @@
 			<version>7.18.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.3.0</version>
-</dependency>
+		
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.25.0</version>
+    </dependency>
+
+    <!-- TestNG (compile scope because used in main/java code) -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.11.0</version>
+    </dependency>
+
+    <!-- ExtentReports -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>5.0.9</version>
+    </dependency>
+
+    <!-- WebDriver Manager (optional, helps manage browser drivers) -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.9.2</version>
+    </dependency>
 
 
 
