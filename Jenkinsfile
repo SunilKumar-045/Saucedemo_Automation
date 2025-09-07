@@ -1,47 +1,47 @@
 pipeline {
     agent any
 
-    environment {
-        // Optional environment variables
-        APP_ENV = 'dev'
+    tools {
+        maven 'Maven3.9.9'   // Configure this name in Jenkins Global Tool Configuration
+        jdk 'JDK21'       // Configure JDK in Jenkins and match the name
     }
-
+    
     stages {
-		stage('Checkout') {
+        stage('Checkout') {
             steps {
-                // Pull code from Git repository
-                git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
-            }
-        }
-        
-        stage('Build') {
-            steps {
-                echo 'Building the project...'
-                bat 'mvn clean install'
+                git branch: 'main', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
-        stage('Test') {
+        stage('Build & Test') {
             steps {
-                echo 'Running tests...'
-                bat 'mvn test'
+                bat "mvn clean test -DsuiteXmlFile=testng.xml"
             }
         }
 
-        stage('Deploy') {
+        stage('Reports') {
             steps {
-                echo "Deploying to ${env.APP_ENV} environment..."
-                // Your deployment logic here
+                // Archive TestNG reports
+                junit '**/test-output/testng-results.xml'
+                
+                // Archive ExtentReports (if generated inside reports folder)
+                archiveArtifacts artifacts: 'reports/**/*', fingerprint: true
+
+                // Archive Screenshots
+                archiveArtifacts artifacts: 'screenshots/**/*', fingerprint: true
             }
         }
     }
 
     post {
-        success {
-            echo 'Pipeline completed successfully.'
+        always {
+            echo "Cleaning workspace..."
+            deleteDir()
         }
         failure {
-            echo 'Pipeline failed.'
+            mail to: 'csunilk2002@gmail.com',
+                 subject: "Saucedemo Pipeline Failed",
+                 body: "Check Jenkins for details."
         }
     }
 }
