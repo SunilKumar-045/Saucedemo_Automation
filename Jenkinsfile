@@ -7,12 +7,13 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
+		stage('Checkout') {
             steps {
-                git 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
+                // Pull code from Git repository
+                git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
-
+        
         stage('Build') {
             steps {
                 echo 'Building the project...'
