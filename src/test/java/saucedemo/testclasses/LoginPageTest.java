@@ -31,7 +31,6 @@ public class LoginPageTest extends BaseTest {
 
     @Test(priority=2)
     public void inValidLogin() {
-    	
     	loginpage.setUserName("standard");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
@@ -41,7 +40,6 @@ public class LoginPageTest extends BaseTest {
     }
     @Test(priority=3)
     public void lockedUser() {
-//    	driver.navigate().refresh();
     	loginpage.setUserName("locked_out_user");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
@@ -52,7 +50,6 @@ public class LoginPageTest extends BaseTest {
     
     @Test(priority=4)
     public void validLogin() {
-//    	driver.navigate().refresh();
         loginpage.setUserName("standard_user");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();

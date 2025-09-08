@@ -22,14 +22,14 @@ public class CartPageTest extends BaseTest{
 		productpage = new ProductPage(driver);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=7)
 	public void isCartPageTest() {
 		assertTrue(driver.getCurrentUrl().contains("cart.html"));
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "isCartPage");
 
 	}
 	
-	@Test(priority=2)
+	@Test(priority=8)
 	public void checkCartWithEmptyTest() throws InterruptedException {
 		cartpage.removeFromCart();
 		 int itemCount = cartpage.getCartItemCount();
@@ -44,11 +44,13 @@ public class CartPageTest extends BaseTest{
 		    
 	}
 	
-	@Test(priority=3)
+	@Test(priority=9)
 	public void verifyAddedProductsTest() throws InterruptedException {
 		driver.navigate().back();
+		Thread.sleep(2000);
 		cartpage.continueShopping();
 		productpage.addAllToCart();
+		Thread.sleep(1000);
 		List<WebElement> addedProducts = cartpage.verifyAddedProducts();
 		for(WebElement productAdded:addedProducts) {
 			assertTrue(productAdded.isDisplayed());
@@ -57,7 +59,7 @@ public class CartPageTest extends BaseTest{
 
 	}
 	
-	@Test(priority=4)
+	@Test(priority=10)
 	public void clickCheckOutTest() {
 		productpage.goToCart();
 		cartpage.clickOnCheckOut();

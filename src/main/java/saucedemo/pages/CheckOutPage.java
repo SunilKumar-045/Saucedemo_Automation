@@ -20,6 +20,8 @@ public class CheckOutPage extends BasePage{
 	private By totalAmount = By.xpath("//div[@data-test='total-label']");
 	private By finishbtn = By.id("finish");
 	private By orderMessage = By.cssSelector(".complete-header");
+	private By backHome = By.id("back-to-products");
+	
 	
 	//actions methods
 	public String checkOutwithoutDetails() {
@@ -44,6 +46,11 @@ public class CheckOutPage extends BasePage{
 		driver.findElement(finishbtn).click();
 		return driver.findElement(orderMessage).getText();
 	}
+	
+	public void returnHome() {
+		driver.findElement(backHome).click();
+	}
+	 
 	
 	
 	

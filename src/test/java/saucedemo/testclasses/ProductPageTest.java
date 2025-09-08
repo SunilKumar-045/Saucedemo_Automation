@@ -28,7 +28,7 @@ public class ProductPageTest extends BaseTest {
 		
 	}
 	
-	    @Test(priority = 2)  // TC013
+	    @Test(priority = 2) 
 	    public void filterTest() throws InterruptedException {
 	    	String actual = productpage.selectFilter();
 	    	String expected = "Name (Z to A)";
@@ -37,9 +37,10 @@ public class ProductPageTest extends BaseTest {
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "filterTest");
 	    	
 	    }
-	    @Test(priority = 3)  // TC012
+	    @Test(priority = 3)  
 	    public void addProductToCart() throws InterruptedException {
 	        productpage.addAllToCart();
+	        Thread.sleep(2000);
 	        assertEquals(productpage.getCartCount(), 6);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "addProductToCart");
 	    }
@@ -54,8 +55,9 @@ public class ProductPageTest extends BaseTest {
 	    }
 	    
 	    @Test(priority = 5)  // TC013
-	    public void removeProductFromCart() {
+	    public void removeProductFromCart() throws InterruptedException {
 	        productpage.removeAllFromCart();
+	        Thread.sleep(1000);
 	        assertEquals(productpage.getCartCount(), 0);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "removeProductFromCart");
 	    }
@@ -69,6 +71,6 @@ public class ProductPageTest extends BaseTest {
 	    	assertTrue("https://www.saucedemo.com/cart.html".equalsIgnoreCase(actual));
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "goToCartTest");
 	    }
-   
+	    
 
 }

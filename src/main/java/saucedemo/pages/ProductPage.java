@@ -20,15 +20,16 @@ public class ProductPage extends BasePage {
 	}
 	
 	//locators
-//	private By productItems = By.className("inventory_item");
-//	private By title_product = By.xpath("//span[@class='title']");
+
 	private By product_Names = By.className("inventory_item_name");
-//	private By product_Prices = By.className("inventory_item_price");
 	private By addToCartBtn = By.xpath("//button[contains(text(),'Add to cart')]");
 	private By removeBtn = By.xpath("//button[contains(text(),'Remove')]");
 	private By cartIcon = By.xpath("//a[@class='shopping_cart_link']");
 	private By cartBadge = By.className("shopping_cart_badge");
 	private By filter_option = By.xpath("//select[@class='product_sort_container']");
+	private By menubtn = By.id("react-burger-menu-btn");
+	private By logout = By.id("logout_sidebar_link");
+	
 
  
 	//action methods
@@ -73,8 +74,7 @@ public class ProductPage extends BasePage {
 	    	Thread.sleep(1000);
 	    	Select select = new Select(filter);
 	    	select.selectByIndex(1);
-//	    	Thread.sleep(500); // optional small wait
-	    	
+	    	Thread.sleep(500); // optional small wait
 	        filter = driver.findElement(filter_option);
 	        select = new Select(filter);
 	        
@@ -92,6 +92,12 @@ public class ProductPage extends BasePage {
 	    	driver.findElement(cartIcon).click();
 	    }
 	    
+	    public void menu() {
+	    	driver.findElement(menubtn).click();
+	    }
+	    public void logout() {
+	    	driver.findElement(logout).click();
+	    }
 	    
 
 	    
