@@ -1,20 +1,53 @@
 pipeline {
-    agent any // Or specify a label for a Windows agent if you have one configured, e.g., agent { label 'windows-node' }
+    agent any
+
+    environment {
+        APP_ENV = 'dev'
+    }
 
     stages {
-        stage('Checkout Code') {
+        stage('Clone') {
             steps {
-                // Replace with your SCM details (Git, SVN, etc.)
-                git 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
+                echo 'Cloning repository...'
+                git branch: 'main', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
-        stage('Build and Test') {
+        stage('Build & Test') {
             steps {
-                // Execute Maven clean install to build and run unit/integration tests
-                // Use 'bat' for Windows commands
-                bat 'mvn clean install'
+                echo 'Building the project and running TestNG tests with Maven...'
+                // Clean + compile + run tests
+                bat 'mvn clean test'
             }
+        }
+
+        stage('Publish Reports') {
+            steps {
+                echo 'Publishing ExtentReports in Jenkins...'
+                publishHTML([
+                    reportDir: 'reports/ExtentReports',    // adjust if your ExtentReports folder differs
+                    reportFiles: 'index.html',
+                    reportName: 'Saucedemo_Report',
+                    keepAll: true,
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true
+                ])
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying to ${env.APP_ENV} environment..."
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed! Please check Jenkins logs and ExtentReport.'
         }
     }
 }
