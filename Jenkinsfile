@@ -29,6 +29,27 @@ pipeline {
     	}
 	}
 
+		 stage('Commit & Push Changes') {
+            steps {
+                script {
+                    echo 'Checking for changes to push...'
+                    bat """
+                        git config user.email "Sunil@pipeline.com"
+                        git config user.name "Sunil"
+
+                        git status
+                        git add .
+
+                        REM Commit only if there are changes
+                        git diff --cached --quiet || git commit -m "Jenkins: Auto-commit after build"
+
+                        REM Push to GitHub
+                        git push origin ${env.GIT_BRANCH}
+                    """
+                }
+            }
+        }
+
         
         
         stage('Publish Reports') {
