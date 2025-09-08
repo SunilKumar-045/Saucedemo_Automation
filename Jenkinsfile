@@ -13,8 +13,5 @@ pipeline {
                 sh 'mvn clean test -DsuiteXmlFile=Saucedemo/testng.xml'
             }
         }
-
-  
     }
-
-
+}
