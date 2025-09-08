@@ -14,32 +14,7 @@ pipeline {
             }
         }
 
-        stage('Publish Cucumber Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'reports/cucumber-reports',
-                    reportFiles: 'cucumber-report.html',
-                    reportName: 'Cucumber Report',
-                    keepAll: true
-                ])
-            }
-        }
-
-        stage('Publish Extent Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'reports/extent-reports',
-                    reportFiles: 'index.html',
-                    reportName: 'Extent Report',
-                    keepAll: true
-                ])
-            }
-        }
+  
     }
 
-    post {
-        always {
-            archiveArtifacts artifacts: 'reports/screenshots/*', fingerprint: true
-        }
-    }
-}
+
