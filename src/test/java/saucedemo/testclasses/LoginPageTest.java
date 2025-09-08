@@ -24,7 +24,6 @@ public class LoginPageTest extends BaseTest {
 
 	@Test(priority=1)
     public void urlWorking() {
-//        ScreenshotUtil.takeScreenshot(driver, "LoginPage_BeforeLogin");  // before login
 		 ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "beforeLogin");
         String actual = loginpage.logo();
         assertEquals("Swag Labs", actual);
@@ -36,7 +35,6 @@ public class LoginPageTest extends BaseTest {
     	loginpage.setUserName("standard");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
-//        ScreenshotUtil.takeScreenshot(driver, "LoginPage_InvalidLogin"); // invalid login
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "ValidLogin");
         String actualerror = loginpage.error();
         assertEquals("Epic sadface: Username and password do not match any user in this service", actualerror);
@@ -47,7 +45,6 @@ public class LoginPageTest extends BaseTest {
     	loginpage.setUserName("locked_out_user");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
-//        ScreenshotUtil.takeScreenshot(driver, "LoginPage_LockedUserLogin"); // locked user login
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "lockeduser");
         assertNotNull(loginpage.error());
         
@@ -59,8 +56,6 @@ public class LoginPageTest extends BaseTest {
         loginpage.setUserName("standard_user");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
-
-//        ScreenshotUtil.takeScreenshot(driver, "LoginPage_AfterLogin");   // after login
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "afterLogin");
         String actualUrl = driver.getCurrentUrl();
         assertEquals("https://www.saucedemo.com/inventory.html", actualUrl);

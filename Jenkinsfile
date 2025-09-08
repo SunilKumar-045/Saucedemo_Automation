@@ -1,53 +1,36 @@
 pipeline {
     agent any
 
-    environment {
-        APP_ENV = 'dev'
+    tools {
+        jdk 'JDK21'
+        maven 'Maven3'
     }
 
     stages {
-        stage('Clone') {
+        stage('Checkout') {
             steps {
-                echo 'Cloning repository...'
-                git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
+                git branch: 'master',
+                    url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
         stage('Build & Test') {
             steps {
-                echo 'Building the project and running TestNG tests with Maven...'
-                // Clean + compile + run tests
-                bat 'mvn clean test'
+                bat 'mvn clean test -Dheadless=true'
             }
-        }
-
-        stage('Publish Reports') {
-            steps {
-                echo 'Publishing ExtentReport in Jenkins...'
-                publishHTML([
-                    reportDir: 'reports',
+            post {
+                always {
+                    archiveArtifacts artifacts: 'test-output/', fingerprint: true
+                    publishHTML([
+                         reportDir: 'reports',
                     reportFiles: 'Saucedemo_Report.html',
                     reportName: 'Saucedemo Report',
                     keepAll: true,
                     allowMissing: false,
                     alwaysLinkToLastBuild: true
-                ])
+                    ])
+                }
             }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo "Deploying to ${env.APP_ENV} environment..."
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Pipeline succeeded!'
-        }
-        failure {
-            echo 'Pipeline failed! Please check Jenkins logs and ExtentReport.'
         }
     }
 }

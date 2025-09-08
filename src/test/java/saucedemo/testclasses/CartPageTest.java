@@ -3,9 +3,7 @@ package saucedemo.testclasses;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
-
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -61,7 +59,6 @@ public class CartPageTest extends BaseTest{
 	
 	@Test(priority=4)
 	public void clickCheckOutTest() {
-		
 		productpage.goToCart();
 		cartpage.clickOnCheckOut();
 		assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");
