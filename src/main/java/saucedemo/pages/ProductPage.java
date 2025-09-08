@@ -49,14 +49,16 @@ public class ProductPage extends BasePage {
 		List<WebElement> addToCartBtns = driver.findElements(addToCartBtn);
 		for(WebElement addtocart:addToCartBtns) {
 			wait.until(ExpectedConditions.elementToBeClickable(addtocart)).click();
+			Thread.sleep(1000);
 			
 		}
 	}
 	
-	public void removeAllFromCart() {
+	public void removeAllFromCart() throws InterruptedException {
 		List<WebElement> removeFromCartBtns = driver.findElements(removeBtn);
 		for(WebElement removeFromCart:removeFromCartBtns) {
 			removeFromCart.click();
+			Thread.sleep(1000);
 		}
 	}
 

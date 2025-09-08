@@ -34,7 +34,7 @@ public class LoginPageTest extends BaseTest {
     	loginpage.setUserName("standard");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
-        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "ValidLogin");
+        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "inValidLogin");
         String actualerror = loginpage.error();
         assertEquals("Epic sadface: Username and password do not match any user in this service", actualerror);
     }
@@ -53,7 +53,7 @@ public class LoginPageTest extends BaseTest {
         loginpage.setUserName("standard_user");
         loginpage.setPassWord("secret_sauce");
         loginpage.clickLogin();
-        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "afterLogin");
+        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "afterLoginwithValidlogin");
         String actualUrl = driver.getCurrentUrl();
         assertEquals("https://www.saucedemo.com/inventory.html", actualUrl);
     }

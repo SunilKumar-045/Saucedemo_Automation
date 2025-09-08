@@ -48,25 +48,26 @@ public class ProductPageTest extends BaseTest {
 	    public void detailsTest() throws InterruptedException {
 	    	String actual = productpage.productDetails();
 	    	assertEquals(actual, "Test.allTheThings() T-Shirt (Red)");
+	    	Thread.sleep(800);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "detailsTest");
-	    	Thread.sleep(1000);
 	    	driver.navigate().back();
 	    	
 	    }
 	    
-	    @Test(priority = 5)  // TC013
+	    @Test(priority = 5) 
 	    public void removeProductFromCart() throws InterruptedException {
 	        productpage.removeAllFromCart();
-	        Thread.sleep(1000);
-	        assertEquals(productpage.getCartCount(), 0);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "removeProductFromCart");
+	        Thread.sleep(800);
+	        assertEquals(productpage.getCartCount(), 0);
+	       
 	    }
 	    
 	    @Test(priority = 6)
 	    public void goToCartTest() throws InterruptedException {
 	    	productpage.addAllToCart();
 	    	productpage.goToCart();
-	    	Thread.sleep(1000);
+	    	Thread.sleep(2000);
 	    	String actual = driver.getCurrentUrl();
 	    	assertTrue("https://www.saucedemo.com/cart.html".equalsIgnoreCase(actual));
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "goToCartTest");

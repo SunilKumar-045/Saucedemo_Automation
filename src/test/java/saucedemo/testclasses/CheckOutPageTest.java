@@ -41,17 +41,20 @@ public class CheckOutPageTest extends BaseTest {
 	@Test(priority=13)
 	public void checkOutTest() {
 		checkout.checkOutWithDetails();
+		ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "checkOutTest");
+		checkout.clickContinue();
 		assertNotEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");
-        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "checkOutTest");
+       
 
 	}
 	
 	@Test(priority=14)
 	public void verifyTotalAmountTest() throws InterruptedException {
 		String actualTotalAmount = checkout.totalAmount();
+		ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "verifyTotalAmountTest");
 		Thread.sleep(2000);
 		assertEquals("Total: $140.34", actualTotalAmount);
-        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "verifyTotalAmountTest");
+        
 
 	}
 	

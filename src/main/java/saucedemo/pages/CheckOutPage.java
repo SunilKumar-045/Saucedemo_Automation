@@ -34,6 +34,9 @@ public class CheckOutPage extends BasePage{
 		driver.findElement(firstName_field).sendKeys("Sunil");
 		driver.findElement(lastName_field).sendKeys("Chakali");
 		driver.findElement(zipCode_field).sendKeys("045045");
+	}
+	
+	public void clickContinue() {
 		driver.findElement(continuebtn).click();
 	}
 	
