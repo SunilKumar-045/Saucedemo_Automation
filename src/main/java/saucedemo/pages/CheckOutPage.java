@@ -2,8 +2,7 @@ package saucedemo.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class CheckOutPage extends BasePage{
 
@@ -18,7 +17,6 @@ public class CheckOutPage extends BasePage{
 	private By zipCode_field = By.id("postal-code");
 	private By continuebtn = By.id("continue");
 	private By errorBox = By.className("error-message-container");
-	private By overView = By.xpath("//span[@class='title']");
 	private By totalAmount = By.xpath("//div[@data-test='total-label']");
 	private By finishbtn = By.id("finish");
 	private By orderMessage = By.cssSelector(".complete-header");

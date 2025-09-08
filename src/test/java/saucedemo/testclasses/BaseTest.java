@@ -15,7 +15,8 @@ public class BaseTest {
 	 protected static WebDriver driver;
 	 WebDriverWait wait;
 	 
-	    @BeforeSuite
+	    @SuppressWarnings("serial")
+		@BeforeSuite
 	    public void setup() {
 	    	ChromeOptions options = new ChromeOptions();
 	    	options.addArguments("--disable-features=PasswordLeakDetection");
