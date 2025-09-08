@@ -21,6 +21,15 @@ pipeline {
             }
         }
         
+        stage('Test') {
+    		steps {
+       			 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+            	 junit '**/target/surefire-reports/*.xml'
+        	}
+    	}
+	}
+
+        
         
         stage('Publish Reports') {
             steps {

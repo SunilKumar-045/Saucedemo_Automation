@@ -29,24 +29,24 @@ public class CartPageTest extends BaseTest{
 
 	}
 	
-//	@Test(priority=8)//where error gets
-//	public void checkCartWithEmptyTest() throws InterruptedException {
-//		cartpage.removeFromCart();
-//		 int itemCount = cartpage.getCartItemCount();
-//		    assertEquals(itemCount, 0, "Cart is not empty at start!");
-//		    cartpage.clickOnCheckOut();
-//		    Thread.sleep(2000);
-//		    String currentUrl = driver.getCurrentUrl();
-//		    assertFalse(currentUrl.contains("checkout-step-one.html"),
-//		            "BUG: Checkout is opening even when cart is empty!");
-//	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "checkCartWithEmpty");
-//
-//		    
-//	}
+	@Test(priority=8)//where error gets
+	public void checkCartWithEmptyTest() throws InterruptedException {
+		cartpage.removeFromCart();
+		 int itemCount = cartpage.getCartItemCount();
+		    assertEquals(itemCount, 0, "Cart is not empty at start!");
+		    cartpage.clickOnCheckOut();
+		    Thread.sleep(2000);
+		    String currentUrl = driver.getCurrentUrl();
+		    assertFalse(currentUrl.contains("checkout-step-one.html"),
+		            "BUG: Checkout is opening even when cart is empty!");
+	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "checkCartWithEmpty");
+
+		    
+	}
 	
 	@Test(priority=9)
 	public void verifyAddedProductsTest() throws InterruptedException {
-//		driver.navigate().back();
+		driver.navigate().back();
 		Thread.sleep(2000);
 		cartpage.continueShopping();
 		productpage.addAllToCart();
