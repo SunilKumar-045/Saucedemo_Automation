@@ -43,7 +43,7 @@ pipeline {
                     git push https://${GIT_USER}:${GIT_TOKEN}@github.com/saisai18018/CapstoneProject.git HEAD:main
                     """
                 }
-            }
+			}
         }
         
         
