@@ -92,14 +92,8 @@ public class ProductPage extends BasePage {
 	    	driver.findElement(cartIcon).click();
 	    }
 	    
-	    public void addSingleProduct(String name) {
-	    	List<WebElement> products = driver.findElements(product_Names);
-	    	for(WebElement product:products) {
-	    		if(product.getText().contains(name)) {
-	    			driver.findElement(addToCartBtn).click();
-	    		}
-	    	}
+	    
 
-	    }
+	    
 	    
 }

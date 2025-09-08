@@ -60,7 +60,7 @@ public class ProductPageTest extends BaseTest {
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "removeProductFromCart");
 	    }
 	    
-	    @Test(priority = 7)
+	    @Test(priority = 6)
 	    public void goToCartTest() throws InterruptedException {
 	    	productpage.addAllToCart();
 	    	productpage.goToCart();

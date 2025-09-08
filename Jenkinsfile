@@ -1,37 +1,45 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3.9.9'   // Match the name you configured in Jenkins
-        jdk 'JDK21'          // Match the JDK name in Jenkins
-    }
-
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
+                git 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
         stage('Build & Test') {
             steps {
-                bat "mvn clean test -DsuiteXmlFile=testng.xml"
+                sh 'mvn clean test -DsuiteXmlFile=Saucedemo/testng.xml'
             }
         }
 
-        stage('Reports') {
+        stage('Publish Cucumber Report') {
             steps {
-                junit '**/test-output/testng-results.xml'
-                archiveArtifacts artifacts: 'reports/**/*', fingerprint: true
-                archiveArtifacts artifacts: 'screenshots/**/*', fingerprint: true
+                publishHTML(target: [
+                    reportDir: 'reports/cucumber-reports',
+                    reportFiles: 'cucumber-report.html',
+                    reportName: 'Cucumber Report',
+                    keepAll: true
+                ])
+            }
+        }
+
+        stage('Publish Extent Report') {
+            steps {
+                publishHTML(target: [
+                    reportDir: 'reports/extent-reports',
+                    reportFiles: 'index.html',
+                    reportName: 'Extent Report',
+                    keepAll: true
+                ])
             }
         }
     }
 
     post {
         always {
-            echo "Cleaning workspace..."
-            deleteDir()
+            archiveArtifacts artifacts: 'reports/screenshots/*', fingerprint: true
         }
     }
 }
