@@ -9,7 +9,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning repository...'
-                git branch: 'master', url: 'https://github.com/SunilKumar-045/Capstone_project.git'
+                git branch: 'main', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
@@ -18,6 +18,20 @@ pipeline {
                 echo 'Building the project and running TestNG tests with Maven...'
                 // Clean + compile + run tests
                 bat 'mvn clean test'
+            }
+        }
+
+        stage('Publish Reports') {
+            steps {
+                echo 'Publishing ExtentReports in Jenkins...'
+                publishHTML([
+                    reportDir: 'reports',    // adjust if your ExtentReports folder differs
+                    reportFiles: 'ExtentReports.html',
+                    reportName: 'Saucedemo_Report',
+                    keepAll: true,
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true
+                ])
             }
         }
 
