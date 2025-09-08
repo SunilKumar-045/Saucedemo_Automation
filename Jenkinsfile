@@ -13,19 +13,6 @@ pipeline {
             steps {
                 bat 'mvn clean test'
             }
-            post {
-                always {
-                    archiveArtifacts artifacts: 'test-output/', fingerprint: true
-                    publishHTML([
-                        reportDir: 'reports',
-                        reportFiles: 'Saucedemo_Report.html',
-                        reportName: 'Saucedemo Report',
-                        keepAll: true, 
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: true
-                    ])
-                }
-            }
         }
     }
 }
