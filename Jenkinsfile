@@ -6,30 +6,44 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
+        stage('Checkout Code') {
             steps {
                 echo 'Cloning repository...'
                 git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }
         }
 
-        stage('Build & Test') {
+        stage('Build & Run Tests') {
             steps {
-                echo 'Building the project and running TestNG tests with Maven...'
-                // Clean + compile + run tests
-                bat 'mvn clean test'
+                echo 'Building the project and running TestNG suite with Maven...'
+                // Run with testng.xml so ExtentReports + ScreenshotUtil work
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
 
-        stage('Publish Reports') {
+        stage('Publish Extent Report') {
             steps {
-                echo 'Publishing ExtentReports in Jenkins...'
+                echo 'Publishing ExtentReport in Jenkins...'
                 publishHTML([
-                    reportDir: 'reports/ExtentReports',    // adjust if your ExtentReports folder differs
-                    reportFiles: 'index.html',
-                    reportName: 'Saucedemo_Report',
+                    reportDir: 'reports',
+                    reportFiles: 'Saucedemo_Report.html',
+                    reportName: 'Saucedemo Report',
                     keepAll: true,
                     allowMissing: false,
+                    alwaysLinkToLastBuild: true
+                ])
+            }
+        }
+
+        stage('Publish Cucumber Report') {
+            steps {
+                echo 'Publishing Cucumber report...'
+                publishHTML([
+                    reportDir: 'reports',
+                    reportFiles: 'cucumberReport.html',
+                    reportName: 'Cucumber Report',
+                    keepAll: true,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true
                 ])
             }
