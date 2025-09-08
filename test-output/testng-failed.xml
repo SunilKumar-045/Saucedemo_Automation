@@ -11,7 +11,7 @@
           <include name="setup"/>
           <include name="teardown"/>
           <include name="init"/>
-          <include name="checkCartWithEmpty"/>
+          <include name="checkCartWithEmptyTest"/>
         </methods>
       </class> <!-- saucedemo.testclasses.CartPageTest -->
     </classes>

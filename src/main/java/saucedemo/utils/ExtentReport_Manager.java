@@ -24,6 +24,10 @@ public class ExtentReport_Manager implements ITestListener {
 
 		reporter = new ExtentReports();
 		reporter.attachReporter(sparkReporter);
+		
+		reporter.setSystemInfo("Tester Name", "Sunil Kumar");
+		reporter.setSystemInfo("Operating System", "Windows 10");
+		
 
 	}
 

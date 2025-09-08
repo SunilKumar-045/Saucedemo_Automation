@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Clone') {
             steps {
                 git 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
             }

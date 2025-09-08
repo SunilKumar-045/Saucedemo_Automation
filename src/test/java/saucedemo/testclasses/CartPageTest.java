@@ -25,14 +25,14 @@ public class CartPageTest extends BaseTest{
 	}
 	
 	@Test(priority=1)
-	public void isCartPage() {
+	public void isCartPageTest() {
 		assertTrue(driver.getCurrentUrl().contains("cart.html"));
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "isCartPage");
 
 	}
 	
 	@Test(priority=2)
-	public void checkCartWithEmpty() throws InterruptedException {
+	public void checkCartWithEmptyTest() throws InterruptedException {
 		cartpage.removeFromCart();
 		 int itemCount = cartpage.getCartItemCount();
 		    assertEquals(itemCount, 0, "Cart is not empty at start!");
@@ -47,7 +47,7 @@ public class CartPageTest extends BaseTest{
 	}
 	
 	@Test(priority=3)
-	public void verifyAddedProducts() throws InterruptedException {
+	public void verifyAddedProductsTest() throws InterruptedException {
 		driver.navigate().back();
 		cartpage.continueShopping();
 		productpage.addAllToCart();
@@ -60,7 +60,7 @@ public class CartPageTest extends BaseTest{
 	}
 	
 	@Test(priority=4)
-	public void clickCheckOut() {
+	public void clickCheckOutTest() {
 		
 		productpage.goToCart();
 		cartpage.clickOnCheckOut();
