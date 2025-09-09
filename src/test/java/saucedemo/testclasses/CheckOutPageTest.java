@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -51,6 +52,8 @@ public class CheckOutPageTest extends BaseTest {
 	@Test(priority=14)
 	public void verifyTotalAmountTest() throws InterruptedException {
 		String actualTotalAmount = checkout.totalAmount();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight);");
 		ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "verifyTotalAmountTest");
 		Thread.sleep(2000);
 		assertEquals("Total: $140.34", actualTotalAmount);

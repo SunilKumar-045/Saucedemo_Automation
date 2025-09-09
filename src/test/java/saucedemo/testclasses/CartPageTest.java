@@ -29,8 +29,8 @@ public class CartPageTest extends BaseTest{
 
 	}
 	
-	//where jenkins build fails because of this negative testcase fails
-//	@Test(priority=8)
+	
+//	@Test(priority=8)//where jenkins build fails because of this negative testcase fails
 //	public void checkCartWithEmptyTest() throws InterruptedException {
 //		cartpage.removeFromCart();
 //		 int itemCount = cartpage.getCartItemCount();
