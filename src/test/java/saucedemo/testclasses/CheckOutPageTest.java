@@ -77,6 +77,7 @@ public class CheckOutPageTest extends BaseTest {
     @Test(priority=17)
     public void logoutTest() throws InterruptedException {
     	productpage.menu();
+    	Thread.sleep(1000);
     	productpage.logout();
     	Thread.sleep(2000);
     	assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/");

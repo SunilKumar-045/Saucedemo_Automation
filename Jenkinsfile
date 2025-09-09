@@ -118,7 +118,7 @@ pipeline {
 
             // Archive screenshots
 
-             archiveArtifacts artifacts: 'screenshots/*', fingerprint: true
+             archiveArtifacts artifacts: 'screenshots/**/*.png', allowEmptyArchive: true, fingerprint: true
  
             // Publish Cucumber Report
 

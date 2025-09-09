@@ -6,7 +6,7 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			
+			<class name="saucedemo.runners.TestRunner"></class>
 			<class name="saucedemo.testclasses.LoginPageTest" />
 			<class name="saucedemo.testclasses.ProductPageTest"/>
 			<class name="saucedemo.testclasses.CartPageTest"/>
