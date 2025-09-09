@@ -98,7 +98,7 @@ pipeline {
  
                             REM Push using token
 
-	                            git push https://%GIT_USER%:%GIT_TOKEN%@github.com/SunilKumar-045/Saucedemo_Automation.git ${BRANCH_NAME}
+	                        git push https://%GIT_USER%:%GIT_TOKEN%@github.com/SunilKumar-045/Saucedemo_Automation.git ${BRANCH_NAME}
 
                         """
 
@@ -118,7 +118,7 @@ pipeline {
 
             // Archive screenshots
 
-            archiveArtifacts artifacts: 'reports/screenshots/*', fingerprint: true
+             archiveArtifacts artifacts: 'screenshots/*', fingerprint: true
  
             // Publish Cucumber Report
 
