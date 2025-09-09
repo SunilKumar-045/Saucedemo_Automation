@@ -1,0 +1,7 @@
+saucedemo\pages\ProductPage.class
+saucedemo\utils\ScreenshotUtil.class
+saucedemo\utils\ExtentReport_Manager.class
+saucedemo\pages\BasePage.class
+saucedemo\pages\LoginPage.class
+saucedemo\pages\CartPage.class
+saucedemo\pages\CheckOutPage.class

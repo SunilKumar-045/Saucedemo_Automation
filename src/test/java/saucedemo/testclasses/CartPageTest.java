@@ -29,7 +29,7 @@ public class CartPageTest extends BaseTest{
 
 	}
 	
-//	@Test(priority=8)//where error gets
+//	@Test(priority=8)//where jenkins build fails because of this negative testcase fails
 //	public void checkCartWithEmptyTest() throws InterruptedException {
 //		cartpage.removeFromCart();
 //		 int itemCount = cartpage.getCartItemCount();
