@@ -49,7 +49,7 @@ public class CartPageTest extends BaseTest{
 		Thread.sleep(2000);
 		cartpage.continueShopping();
 		productpage.addAllToCart();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		List<WebElement> addedProducts = cartpage.verifyAddedProducts();
 		for(WebElement productAdded:addedProducts) {
 			assertTrue(productAdded.isDisplayed());
@@ -61,7 +61,7 @@ public class CartPageTest extends BaseTest{
 	@Test(priority=10)
 	public void clickCheckOutTest() throws InterruptedException {
 		productpage.goToCart();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		cartpage.clickOnCheckOut();
 		assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");
         ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "clickCheckOut");

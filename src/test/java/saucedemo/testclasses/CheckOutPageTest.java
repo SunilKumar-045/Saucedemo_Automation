@@ -52,6 +52,7 @@ public class CheckOutPageTest extends BaseTest {
 	@Test(priority=14)
 	public void verifyTotalAmountTest() throws InterruptedException {
 		String actualTotalAmount = checkout.totalAmount();
+		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight);");
 		ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "verifyTotalAmountTest");
