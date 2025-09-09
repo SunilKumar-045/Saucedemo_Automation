@@ -48,8 +48,8 @@ public class ProductPage extends BasePage {
 	public void addAllToCart() throws InterruptedException{
 		List<WebElement> addToCartBtns = driver.findElements(addToCartBtn);
 		for(WebElement addtocart:addToCartBtns) {
-			wait.until(ExpectedConditions.elementToBeClickable(addtocart)).click();
-			Thread.sleep(1000);
+			addtocart.click();
+			Thread.sleep(500);
 			
 		}
 	}
@@ -58,7 +58,7 @@ public class ProductPage extends BasePage {
 		List<WebElement> removeFromCartBtns = driver.findElements(removeBtn);
 		for(WebElement removeFromCart:removeFromCartBtns) {
 			removeFromCart.click();
-			Thread.sleep(1000);
+			Thread.sleep(500);
 		}
 	}
 

@@ -32,10 +32,11 @@ public class CartPage extends BasePage{
 		 driver.findElement(checkOut).click();
 	 }
 	 
-	 public void removeFromCart() {
+	 public void removeFromCart() throws InterruptedException {
 		 List<WebElement> removeall = driver.findElements(removebtn);
 		 for(WebElement remove:removeall) {
 			 remove.click();
+			 Thread.sleep(300);
 		 }
 	 }
 	 public void continueShopping() {

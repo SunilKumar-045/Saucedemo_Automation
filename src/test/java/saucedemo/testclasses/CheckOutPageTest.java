@@ -1,7 +1,6 @@
 package saucedemo.testclasses;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
@@ -39,11 +38,12 @@ public class CheckOutPageTest extends BaseTest {
 	}
 	
 	@Test(priority=13)
-	public void checkOutTest() {
+	public void checkOutTest() throws InterruptedException {
+		driver.navigate().refresh();
 		checkout.checkOutWithDetails();
 		ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "checkOutTest");
 		checkout.clickContinue();
-		assertNotEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");
+		assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-two.html");
        
 
 	}

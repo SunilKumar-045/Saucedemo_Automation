@@ -48,7 +48,7 @@ public class ProductPageTest extends BaseTest {
 	    public void detailsTest() throws InterruptedException {
 	    	String actual = productpage.productDetails();
 	    	assertEquals(actual, "Test.allTheThings() T-Shirt (Red)");
-	    	Thread.sleep(800);
+	    	Thread.sleep(500);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "detailsTest");
 	    	driver.navigate().back();
 	    	
@@ -57,8 +57,8 @@ public class ProductPageTest extends BaseTest {
 	    @Test(priority = 5) 
 	    public void removeProductFromCart() throws InterruptedException {
 	        productpage.removeAllFromCart();
+	        Thread.sleep(500);
 	        ScreenshotUtil.takeScreenshot(driver, this.getClass().getSimpleName(), "removeProductFromCart");
-	        Thread.sleep(800);
 	        assertEquals(productpage.getCartCount(), 0);
 	       
 	    }

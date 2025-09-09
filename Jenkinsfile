@@ -1,79 +1,134 @@
 pipeline {
+
     agent any
-
+ 
     environment {
-        APP_ENV = 'dev'
-    }
 
+        GIT_CREDENTIALS_ID = 'SunilKumar-045' // Replace with your credentials ID
+
+        BRANCH_NAME = 'master' // or 'master' or any other branch
+
+        ECLIPSE_WORKSPACE = 'E:\\Wipro_capstone_Project' // Change to your path
+
+        COMMIT_MESSAGE = 'Automated commit from Jenkins'
+
+    }
+ 
     stages {
-        stage('Clone') {
-            steps {
-                echo 'Cloning repository...'
-                git branch: 'master', url: 'https://github.com/SunilKumar-045/Saucedemo_Automation.git'
-            }
-        }
 
-        stage('Build & Test') {
-            steps {
-                echo 'Building the project and running TestNG tests with Maven...'
-                // Clean + compile + run tests
-                bat 'mvn clean test'
-            }
-        }
-        
-        stage('Test') {
-    		steps {
-       			 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-            	 junit '**/target/surefire-reports/*.xml'
-        	}
-    	}
-	}
+        stage('Checkout from Git') {
 
-		stage('Push Changes') {
             steps {
-                echo 'Pushing local changes to GitHub...'
-                withCredentials([usernamePassword(credentialsId: 'CapstoneProject', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
-                    bat """
-                    git config user.email "admin@gmail.com"
-                    git config user.name "Admin"
 
-                    git add .
-                    git commit -m "Automated commit from Jenkins" || echo "No changes to commit"
+                checkout([$class: 'GitSCM',
 
-                    git push https://${GIT_USER}:${GIT_TOKEN}@github.com/saisai18018/CapstoneProject.git HEAD:main
-                    """
-                }
-			}
-		}
-        
-        
-        stage('Publish Reports') {
-            steps {
-                echo 'Publishing ExtentReports in Jenkins...'
-                publishHTML([
-                    reportDir: 'reports',    // adjust if your ExtentReports folder differs
-                    reportFiles: 'ExtentReports.html',
-                    reportName: 'Saucedemo_Report',
-                    keepAll: true,
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true
+                    branches: [[name: "*/${env.BRANCH_NAME}"]],
+
+                    userRemoteConfigs: [[
+
+                        url: 'https://github.com/your-username/your-repo.git', // Replace with your repo
+
+                        credentialsId: "${env.GIT_CREDENTIALS_ID}"
+
+                    ]]
+
                 ])
-            }
-        }
 
-        stage('Deploy') {
+            }
+
+        }
+ 
+        stage('Copy Files from Eclipse Workspace') {
+
             steps {
-                echo "Deploying to ${env.APP_ENV} environment..."
+
+                bat """
+
+                echo Copying files from Eclipse workspace...
+
+                xcopy /E /Y /I "${ECLIPSE_WORKSPACE}\\*" "."
+
+                """
+
             }
+
         }
+ 
+        stage('Configure Git') {
+
+            steps {
+
+                bat """
+
+                git config user.email "sunil@gmail.com"
+
+                git config user.name "Sunil"
+
+                """
+
+            }
+
+        }
+ 
+        stage('Check Git Status') {
+
+            steps {
+
+                bat 'git status'
+
+            }
+
+        }
+ 
+        stage('Commit & Push Changes') {
+
+            steps {
+
+                bat """
+
+                git add .
+ 
+                REM Check if there are changes before committing
+
+                git diff --cached --quiet
+
+                IF %ERRORLEVEL% NEQ 0 (
+
+                    echo Changes detected, committing...
+
+                    git commit -m "${COMMIT_MESSAGE}"
+
+                    git push origin ${BRANCH_NAME}
+
+                ) ELSE (
+
+                    echo No changes to commit.
+
+                )
+
+                """
+
+            }
+
+        }
+
+    }
+ 
+    post {
+
+        success {
+
+            echo 'Push to Git completed (if there were changes).'
+
+        }
+
+        failure {
+
+            echo 'Build failed. Check console output.'
+
+        }
+
     }
 
-    post {
-        success {
-            echo 'Pipeline succeeded!'
-        }
-        failure {
-            echo 'Pipeline failed! Please check Jenkins logs and ExtentReport.'
-        }
-    }
 }
+ 
