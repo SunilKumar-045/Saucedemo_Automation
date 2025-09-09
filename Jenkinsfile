@@ -79,10 +79,16 @@ pipeline {
                         bat """
 
                             git config user.email "jenkins@pipeline.com"
+                            
+                            echo 'useremailconfirmed'
 
                             git config user.name "Jenkins CI"
+                            
+                            echo 'usernameconfirmed'
  
                             git status
+                            
+                            echo 'status confirm'
 
                             git add .
  

@@ -70,7 +70,7 @@ public class ProductPage extends BasePage {
 	    public String selectFilter() throws InterruptedException {
 	    	WebElement filter = driver.findElement(filter_option);
 	    	filter.click();
-	    	Thread.sleep(1000);
+	    	Thread.sleep(1500);
 	    	Select select = new Select(filter);
 	    	select.selectByIndex(1);
 	    	Thread.sleep(500); // optional small wait
