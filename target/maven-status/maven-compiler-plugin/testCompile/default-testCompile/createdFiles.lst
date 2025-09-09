@@ -1,0 +1,9 @@
+saucedemo\testclasses\ProductPageTest.class
+saucedemo\testclasses\CartPageTest.class
+saucedemo\stepDefinitions\LoginPageSteps.class
+saucedemo\testclasses\CheckOutPageTest.class
+saucedemo\testclasses\LoginPageTest.class
+saucedemo\testclasses\BaseTest$1.class
+saucedemo\testclasses\BaseTest.class
+saucedemo\stepDefinitions\CucumberHooks.class
+saucedemo\runners\TestRunner.class
