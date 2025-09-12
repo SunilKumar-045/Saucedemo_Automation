@@ -46,6 +46,7 @@ public class CartPageTest extends BaseTest{
 	@Test(priority=9)
 	public void verifyAddedProductsTest() throws InterruptedException {
 //		driver.navigate().back();
+		cartpage.removeFromCart();
 		Thread.sleep(2000);
 		cartpage.continueShopping();
 		productpage.addAllToCart();
