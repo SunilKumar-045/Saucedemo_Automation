@@ -183,7 +183,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="saucedemo.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid login attempt&quot;, &quot;Login Page Tests&quot;)">runScenario("Invalid login attempt", "Login Page Tests")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="saucedemo.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid login attempt&quot;, &quot;Login Page Tests&quot;)">runScenario("Valid login attempt", "Login Page Tests")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -193,7 +193,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="saucedemo.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid login attempt&quot;, &quot;Login Page Tests&quot;)">runScenario("Valid login attempt", "Login Page Tests")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="saucedemo.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid login attempt&quot;, &quot;Login Page Tests&quot;)">runScenario("Invalid login attempt", "Login Page Tests")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -233,35 +233,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">saucedemo.testclasses.CartPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickCheckOutTest">
-                  </a> <!-- clickCheckOutTest -->
-                  <span class="method-name">clickCheckOutTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isCartPageTest">
-                  </a> <!-- isCartPageTest -->
-                  <span class="method-name">isCartPageTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddedProductsTest">
-                  </a> <!-- verifyAddedProductsTest -->
-                  <span class="method-name">verifyAddedProductsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -372,15 +343,44 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">saucedemo.testclasses.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickCheckOutTest">
+                  </a> <!-- clickCheckOutTest -->
+                  <span class="method-name">clickCheckOutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isCartPageTest">
+                  </a> <!-- isCartPageTest -->
+                  <span class="method-name">isCartPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddedProductsTest">
+                  </a> <!-- verifyAddedProductsTest -->
+                  <span class="method-name">verifyAddedProductsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">saucedemo.runners.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Invalid login attempt&quot;, &quot;Login Page Tests&quot;)">
-                  </a> <!-- runScenario("Invalid login attempt", "Login Page Tests") -->
+                  <a name="runScenario(&quot;Valid login attempt&quot;, &quot;Login Page Tests&quot;)">
+                  </a> <!-- runScenario("Valid login attempt", "Login Page Tests") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Invalid login attempt","Login Page Tests")</span>
+                  <span class="parameters">("Valid login attempt","Login Page Tests")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -397,10 +397,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Valid login attempt&quot;, &quot;Login Page Tests&quot;)">
-                  </a> <!-- runScenario("Valid login attempt", "Login Page Tests") -->
+                  <a name="runScenario(&quot;Invalid login attempt&quot;, &quot;Login Page Tests&quot;)">
+                  </a> <!-- runScenario("Invalid login attempt", "Login Page Tests") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Valid login attempt","Login Page Tests")</span>
+                  <span class="parameters">("Invalid login attempt","Login Page Tests")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -522,101 +522,101 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removeProductFromCart')
-data.setCell(0, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(0, 3, 14303);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'saucedemo.runners.TestRunner')
+data.setCell(0, 3, 23085);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddedProductsTest')
-data.setCell(1, 2, 'saucedemo.testclasses.CartPageTest')
-data.setCell(1, 3, 10357);
+data.setCell(1, 1, 'removeProductFromCart')
+data.setCell(1, 2, 'saucedemo.testclasses.ProductPageTest')
+data.setCell(1, 3, 16305);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductToCart')
-data.setCell(2, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(2, 3, 6422);
+data.setCell(2, 1, 'verifyAddedProductsTest')
+data.setCell(2, 2, 'saucedemo.testclasses.CartPageTest')
+data.setCell(2, 3, 11196);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'goToCartTest')
+data.setCell(3, 1, 'addProductToCart')
 data.setCell(3, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(3, 3, 5901);
+data.setCell(3, 3, 7001);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'filterTest')
+data.setCell(4, 1, 'goToCartTest')
 data.setCell(4, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(4, 3, 4588);
+data.setCell(4, 3, 5943);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'saucedemo.runners.TestRunner')
-data.setCell(5, 3, 3812);
+data.setCell(5, 1, 'filterTest')
+data.setCell(5, 2, 'saucedemo.testclasses.ProductPageTest')
+data.setCell(5, 3, 4794);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'saucedemo.runners.TestRunner')
-data.setCell(6, 3, 3716);
+data.setCell(6, 3, 4745);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'saucedemo.runners.TestRunner')
-data.setCell(7, 3, 3622);
+data.setCell(7, 3, 4351);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'saucedemo.runners.TestRunner')
-data.setCell(8, 3, 3360);
+data.setCell(8, 3, 4310);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'logoutTest')
 data.setCell(9, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(9, 3, 3289);
+data.setCell(9, 3, 3341);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyTotalAmountTest')
 data.setCell(10, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(10, 3, 3184);
+data.setCell(10, 3, 3168);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'clickCheckOutTest')
 data.setCell(11, 2, 'saucedemo.testclasses.CartPageTest')
-data.setCell(11, 3, 2473);
+data.setCell(11, 3, 2446);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'checkOutWithoutDetailsTest')
 data.setCell(12, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(12, 3, 2278);
+data.setCell(12, 3, 2340);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'finishOrderingTest')
 data.setCell(13, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(13, 3, 2243);
+data.setCell(13, 3, 2281);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'checkOutTest')
 data.setCell(14, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(14, 3, 1363);
+data.setCell(14, 3, 1188);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'inValidLogin')
-data.setCell(15, 2, 'saucedemo.testclasses.LoginPageTest')
-data.setCell(15, 3, 825);
+data.setCell(15, 1, 'detailsTest')
+data.setCell(15, 2, 'saucedemo.testclasses.ProductPageTest')
+data.setCell(15, 3, 1121);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'detailsTest')
-data.setCell(16, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(16, 3, 803);
+data.setCell(16, 1, 'inValidLogin')
+data.setCell(16, 2, 'saucedemo.testclasses.LoginPageTest')
+data.setCell(16, 3, 967);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'validLogin')
+data.setCell(17, 1, 'lockedUser')
 data.setCell(17, 2, 'saucedemo.testclasses.LoginPageTest')
-data.setCell(17, 3, 571);
+data.setCell(17, 3, 940);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'lockedUser')
+data.setCell(18, 1, 'validLogin')
 data.setCell(18, 2, 'saucedemo.testclasses.LoginPageTest')
-data.setCell(18, 3, 538);
+data.setCell(18, 3, 826);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'productDisplayed')
 data.setCell(19, 2, 'saucedemo.testclasses.ProductPageTest')
-data.setCell(19, 3, 355);
+data.setCell(19, 3, 408);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'urlWorking')
 data.setCell(20, 2, 'saucedemo.testclasses.LoginPageTest')
-data.setCell(20, 3, 221);
+data.setCell(20, 3, 388);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'homepageTest')
 data.setCell(21, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(21, 3, 162);
+data.setCell(21, 3, 179);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'checkOutPageTest')
-data.setCell(22, 2, 'saucedemo.testclasses.CheckOutPageTest')
-data.setCell(22, 3, 115);
+data.setCell(22, 1, 'isCartPageTest')
+data.setCell(22, 2, 'saucedemo.testclasses.CartPageTest')
+data.setCell(22, 3, 124);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'isCartPageTest')
-data.setCell(23, 2, 'saucedemo.testclasses.CartPageTest')
-data.setCell(23, 3, 95);
+data.setCell(23, 1, 'checkOutPageTest')
+data.setCell(23, 2, 'saucedemo.testclasses.CheckOutPageTest')
+data.setCell(23, 3, 110);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -681,222 +681,222 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">7040 ms</span>
+                <span class="method-start">31025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">urlWorking</span>
-                <span class="method-start">7048 ms</span>
+                <span class="method-start">31036 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">7299 ms</span>
+                <span class="method-start">31450 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">7505 ms</span>
+                <span class="method-start">31719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">inValidLogin</span>
-                <span class="method-start">7506 ms</span>
+                <span class="method-start">31722 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">8333 ms</span>
+                <span class="method-start">32691 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">32898 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">lockedUser</span>
-                <span class="method-start">8416 ms</span>
+                <span class="method-start">32900 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">init</span>
-                <span class="method-start">8416 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">8955 ms</span>
+                <span class="method-start">33842 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9050 ms</span>
+                <span class="method-start">34000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">9052 ms</span>
+                <span class="method-start">34001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">9624 ms</span>
+                <span class="method-start">34829 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">saucedemo.testclasses.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9697 ms</span>
+                <span class="method-start">34909 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productDisplayed</span>
-                <span class="method-start">9702 ms</span>
+                <span class="method-start">34915 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">10060 ms</span>
+                <span class="method-start">35326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">filterTest</span>
-                <span class="method-start">10061 ms</span>
+                <span class="method-start">35328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">14652 ms</span>
+                <span class="method-start">40124 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">14653 ms</span>
+                <span class="method-start">40125 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">21077 ms</span>
+                <span class="method-start">47132 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">detailsTest</span>
-                <span class="method-start">21078 ms</span>
+                <span class="method-start">47134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">21884 ms</span>
+                <span class="method-start">48259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeProductFromCart</span>
-                <span class="method-start">21886 ms</span>
+                <span class="method-start">48261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">36193 ms</span>
+                <span class="method-start">64568 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">goToCartTest</span>
-                <span class="method-start">36195 ms</span>
+                <span class="method-start">64569 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">saucedemo.testclasses.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">42098 ms</span>
+                <span class="method-start">70514 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">isCartPageTest</span>
-                <span class="method-start">42103 ms</span>
+                <span class="method-start">70517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">42200 ms</span>
+                <span class="method-start">70644 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddedProductsTest</span>
-                <span class="method-start">42203 ms</span>
+                <span class="method-start">70646 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">52562 ms</span>
+                <span class="method-start">81845 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickCheckOutTest</span>
-                <span class="method-start">52564 ms</span>
+                <span class="method-start">81846 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">saucedemo.testclasses.CheckOutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">55039 ms</span>
+                <span class="method-start">84294 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutPageTest</span>
-                <span class="method-start">55042 ms</span>
+                <span class="method-start">84298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">55159 ms</span>
+                <span class="method-start">84410 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutWithoutDetailsTest</span>
-                <span class="method-start">55160 ms</span>
+                <span class="method-start">84412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">57439 ms</span>
+                <span class="method-start">86756 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutTest</span>
-                <span class="method-start">57440 ms</span>
+                <span class="method-start">86757 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">58807 ms</span>
+                <span class="method-start">87947 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTotalAmountTest</span>
-                <span class="method-start">58809 ms</span>
+                <span class="method-start">87949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">62000 ms</span>
+                <span class="method-start">91123 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">finishOrderingTest</span>
-                <span class="method-start">62001 ms</span>
+                <span class="method-start">91124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">64247 ms</span>
+                <span class="method-start">93406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homepageTest</span>
-                <span class="method-start">64248 ms</span>
+                <span class="method-start">93407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">64414 ms</span>
+                <span class="method-start">93588 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoutTest</span>
-                <span class="method-start">64415 ms</span>
+                <span class="method-start">93589 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">saucedemo.runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@685f5d0d)</span>
-                <span class="method-start">67706 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6a2d867d)</span>
+                <span class="method-start">96931 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify URL is working", "Login Page Tests")</span>
-                <span class="method-start">69090 ms</span>
+                <span class="method-start">98236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Invalid login attempt", "Login Page Tests")</span>
-                <span class="method-start">72452 ms</span>
+                <span class="method-start">102589 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Locked out user login", "Login Page Tests")</span>
-                <span class="method-start">76265 ms</span>
+                <span class="method-start">107336 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Valid login attempt", "Login Page Tests")</span>
-                <span class="method-start">79982 ms</span>
+                <span class="method-start">111647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">83610 ms</span>
+                <span class="method-start">134740 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">saucedemo.testclasses.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">84767 ms</span>
+                <span class="method-start">136217 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
