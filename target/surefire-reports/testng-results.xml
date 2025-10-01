@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-30T12:43:11 IST" name="Suite" finished-at="2025-09-30T12:44:30 IST" duration-ms="78267">
+  <suite started-at="2025-10-01T16:49:17 IST" name="Suite" finished-at="2025-10-01T16:50:56 IST" duration-ms="98496">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-30T12:43:11 IST" name="Test" finished-at="2025-09-30T12:44:30 IST" duration-ms="78267">
+    <test started-at="2025-10-01T16:49:17 IST" name="Test" finished-at="2025-10-01T16:50:56 IST" duration-ms="98496">
       <class name="saucedemo.runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:12 IST" name="setUpClass" finished-at="2025-09-30T12:44:14 IST" duration-ms="1372" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:28 IST" name="setUpClass" finished-at="2025-10-01T16:50:29 IST" duration-ms="1359" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3a0aaaf0]]>
+                <![CDATA[org.testng.TestRunner@6a2d867d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-30T12:44:18 IST" duration-ms="4183" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-01T16:50:35 IST" duration-ms="5423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-30T12:44:22 IST" duration-ms="3806" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-01T16:50:41 IST" duration-ms="6157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-30T12:44:26 IST" duration-ms="4217" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-01T16:50:49 IST" duration-ms="8277" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-30T12:44:30 IST" duration-ms="3766" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-01T16:50:56 IST" duration-ms="6334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,199 +85,199 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-09-30T12:44:30 IST" name="tearDownClass" finished-at="2025-09-30T12:44:30 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:saucedemo.runners.TestRunner@477b4cdf]" started-at="2025-10-01T16:50:56 IST" name="tearDownClass" finished-at="2025-10-01T16:50:56 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- saucedemo.runners.TestRunner -->
       <class name="saucedemo.testclasses.ProductPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:15 IST" name="init" finished-at="2025-09-30T12:43:15 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:26 IST" name="init" finished-at="2025-10-01T16:49:26 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="productDisplayed()[pri:1, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:15 IST" name="productDisplayed" finished-at="2025-09-30T12:43:15 IST" duration-ms="351" status="PASS">
+        <test-method signature="productDisplayed()[pri:1, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:26 IST" name="productDisplayed" finished-at="2025-10-01T16:49:26 IST" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productDisplayed -->
-        <test-method signature="filterTest()[pri:2, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:15 IST" name="filterTest" finished-at="2025-09-30T12:43:20 IST" duration-ms="4570" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:26 IST" name="init" finished-at="2025-10-01T16:49:26 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="filterTest()[pri:2, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:26 IST" name="filterTest" finished-at="2025-10-01T16:49:31 IST" duration-ms="4786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:15 IST" name="init" finished-at="2025-09-30T12:43:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:20 IST" name="init" finished-at="2025-09-30T12:43:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="addProductToCart()[pri:3, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:20 IST" name="addProductToCart" finished-at="2025-09-30T12:43:26 IST" duration-ms="5966" status="PASS">
+        <test-method signature="addProductToCart()[pri:3, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:31 IST" name="addProductToCart" finished-at="2025-10-01T16:49:37 IST" duration-ms="6171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:26 IST" name="init" finished-at="2025-09-30T12:43:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:31 IST" name="init" finished-at="2025-10-01T16:49:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="detailsTest()[pri:4, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:26 IST" name="detailsTest" finished-at="2025-09-30T12:43:26 IST" duration-ms="795" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:37 IST" name="init" finished-at="2025-10-01T16:49:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="detailsTest()[pri:4, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:37 IST" name="detailsTest" finished-at="2025-10-01T16:49:38 IST" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- detailsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:26 IST" name="init" finished-at="2025-09-30T12:43:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:38 IST" name="init" finished-at="2025-10-01T16:49:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="removeProductFromCart()[pri:5, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:26 IST" name="removeProductFromCart" finished-at="2025-09-30T12:43:41 IST" duration-ms="14587" status="PASS">
+        <test-method signature="removeProductFromCart()[pri:5, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:38 IST" name="removeProductFromCart" finished-at="2025-10-01T16:49:53 IST" duration-ms="14568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeProductFromCart -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:41 IST" name="init" finished-at="2025-09-30T12:43:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="goToCartTest()[pri:6, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-09-30T12:43:41 IST" name="goToCartTest" finished-at="2025-09-30T12:43:47 IST" duration-ms="5903" status="PASS">
+        <test-method signature="goToCartTest()[pri:6, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:53 IST" name="goToCartTest" finished-at="2025-10-01T16:50:00 IST" duration-ms="7166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToCartTest -->
-      </class> <!-- saucedemo.testclasses.ProductPageTest -->
-      <class name="saucedemo.testclasses.CartPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:47 IST" name="init" finished-at="2025-09-30T12:43:47 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.ProductPageTest@7dcf94f8]" started-at="2025-10-01T16:49:53 IST" name="init" finished-at="2025-10-01T16:49:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="isCartPageTest()[pri:7, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:47 IST" name="isCartPageTest" finished-at="2025-09-30T12:43:47 IST" duration-ms="369" status="PASS">
+      </class> <!-- saucedemo.testclasses.ProductPageTest -->
+      <class name="saucedemo.testclasses.CartPageTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:00 IST" name="init" finished-at="2025-10-01T16:50:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="isCartPageTest()[pri:7, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:00 IST" name="isCartPageTest" finished-at="2025-10-01T16:50:00 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCartPageTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:47 IST" name="init" finished-at="2025-09-30T12:43:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:00 IST" name="init" finished-at="2025-10-01T16:50:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="verifyAddedProductsTest()[pri:9, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:47 IST" name="verifyAddedProductsTest" finished-at="2025-09-30T12:43:58 IST" duration-ms="10384" status="PASS">
+        <test-method signature="verifyAddedProductsTest()[pri:9, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:00 IST" name="verifyAddedProductsTest" finished-at="2025-10-01T16:50:12 IST" duration-ms="11689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddedProductsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:58 IST" name="init" finished-at="2025-09-30T12:43:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:12 IST" name="init" finished-at="2025-10-01T16:50:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="clickCheckOutTest()[pri:10, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-09-30T12:43:58 IST" name="clickCheckOutTest" finished-at="2025-09-30T12:44:00 IST" duration-ms="2386" status="PASS">
+        <test-method signature="clickCheckOutTest()[pri:10, instance:saucedemo.testclasses.CartPageTest@229f66ed]" started-at="2025-10-01T16:50:12 IST" name="clickCheckOutTest" finished-at="2025-10-01T16:50:15 IST" duration-ms="3036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickCheckOutTest -->
       </class> <!-- saucedemo.testclasses.CartPageTest -->
       <class name="saucedemo.testclasses.CheckOutPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:00 IST" name="init" finished-at="2025-09-30T12:44:00 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:15 IST" name="init" finished-at="2025-10-01T16:50:15 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="checkOutPageTest()[pri:11, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:00 IST" name="checkOutPageTest" finished-at="2025-09-30T12:44:00 IST" duration-ms="93" status="PASS">
+        <test-method signature="checkOutPageTest()[pri:11, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:15 IST" name="checkOutPageTest" finished-at="2025-10-01T16:50:15 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutPageTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:00 IST" name="init" finished-at="2025-09-30T12:44:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:15 IST" name="init" finished-at="2025-10-01T16:50:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="checkOutWithoutDetailsTest()[pri:12, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:00 IST" name="checkOutWithoutDetailsTest" finished-at="2025-09-30T12:44:02 IST" duration-ms="2262" status="PASS">
+        <test-method signature="checkOutWithoutDetailsTest()[pri:12, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:15 IST" name="checkOutWithoutDetailsTest" finished-at="2025-10-01T16:50:17 IST" duration-ms="2353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutWithoutDetailsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:02 IST" name="init" finished-at="2025-09-30T12:44:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:17 IST" name="init" finished-at="2025-10-01T16:50:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="checkOutTest()[pri:13, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:02 IST" name="checkOutTest" finished-at="2025-09-30T12:44:03 IST" duration-ms="1087" status="PASS">
+        <test-method signature="checkOutTest()[pri:13, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:17 IST" name="checkOutTest" finished-at="2025-10-01T16:50:19 IST" duration-ms="1212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:03 IST" name="init" finished-at="2025-09-30T12:44:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:19 IST" name="init" finished-at="2025-10-01T16:50:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="verifyTotalAmountTest()[pri:14, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:03 IST" name="verifyTotalAmountTest" finished-at="2025-09-30T12:44:07 IST" duration-ms="3139" status="PASS">
+        <test-method signature="verifyTotalAmountTest()[pri:14, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:19 IST" name="verifyTotalAmountTest" finished-at="2025-10-01T16:50:22 IST" duration-ms="3220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTotalAmountTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:07 IST" name="init" finished-at="2025-09-30T12:44:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:22 IST" name="init" finished-at="2025-10-01T16:50:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="finishOrderingTest()[pri:15, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:07 IST" name="finishOrderingTest" finished-at="2025-09-30T12:44:09 IST" depends-on-methods="saucedemo.testclasses.CheckOutPageTest.verifyTotalAmountTest" duration-ms="2244" status="PASS">
+        <test-method signature="finishOrderingTest()[pri:15, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:22 IST" name="finishOrderingTest" finished-at="2025-10-01T16:50:24 IST" depends-on-methods="saucedemo.testclasses.CheckOutPageTest.verifyTotalAmountTest" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishOrderingTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:09 IST" name="init" finished-at="2025-09-30T12:44:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:24 IST" name="init" finished-at="2025-10-01T16:50:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="homepageTest()[pri:16, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:09 IST" name="homepageTest" finished-at="2025-09-30T12:44:09 IST" duration-ms="141" status="PASS">
+        <test-method signature="homepageTest()[pri:16, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:24 IST" name="homepageTest" finished-at="2025-10-01T16:50:25 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:09 IST" name="init" finished-at="2025-09-30T12:44:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:25 IST" name="init" finished-at="2025-10-01T16:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="logoutTest()[pri:17, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-09-30T12:44:09 IST" name="logoutTest" finished-at="2025-09-30T12:44:12 IST" duration-ms="3266" status="PASS">
+        <test-method signature="logoutTest()[pri:17, instance:saucedemo.testclasses.CheckOutPageTest@6743e411]" started-at="2025-10-01T16:50:25 IST" name="logoutTest" finished-at="2025-10-01T16:50:28 IST" duration-ms="3527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
       </class> <!-- saucedemo.testclasses.CheckOutPageTest -->
       <class name="saucedemo.testclasses.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:05 IST" name="setup" finished-at="2025-09-30T12:43:11 IST" duration-ms="6885" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:48:56 IST" name="setup" finished-at="2025-10-01T16:49:17 IST" duration-ms="21740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:12 IST" name="init" finished-at="2025-09-30T12:43:12 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:18 IST" name="init" finished-at="2025-10-01T16:49:18 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="urlWorking()[pri:1, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:12 IST" name="urlWorking" finished-at="2025-09-30T12:43:12 IST" duration-ms="202" status="PASS">
+        <test-method signature="urlWorking()[pri:1, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:18 IST" name="urlWorking" finished-at="2025-10-01T16:49:19 IST" duration-ms="937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlWorking -->
-        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:12 IST" name="close" finished-at="2025-09-30T12:43:13 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:19 IST" name="close" finished-at="2025-10-01T16:49:19 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:13 IST" name="init" finished-at="2025-09-30T12:43:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:19 IST" name="init" finished-at="2025-10-01T16:49:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="inValidLogin()[pri:2, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:13 IST" name="inValidLogin" finished-at="2025-09-30T12:43:13 IST" duration-ms="660" status="PASS">
+        <test-method signature="inValidLogin()[pri:2, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:19 IST" name="inValidLogin" finished-at="2025-10-01T16:49:21 IST" duration-ms="1908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:13 IST" name="close" finished-at="2025-09-30T12:43:13 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:21 IST" name="close" finished-at="2025-10-01T16:49:21 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:13 IST" name="init" finished-at="2025-09-30T12:43:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:21 IST" name="init" finished-at="2025-10-01T16:49:21 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="lockedUser()[pri:3, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:13 IST" name="lockedUser" finished-at="2025-09-30T12:43:14 IST" duration-ms="549" status="PASS">
+        <test-method signature="lockedUser()[pri:3, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:21 IST" name="lockedUser" finished-at="2025-10-01T16:49:24 IST" duration-ms="2408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedUser -->
-        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:14 IST" name="close" finished-at="2025-09-30T12:43:14 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:24 IST" name="close" finished-at="2025-10-01T16:49:24 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:14 IST" name="init" finished-at="2025-09-30T12:43:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:24 IST" name="init" finished-at="2025-10-01T16:49:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="validLogin()[pri:4, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:14 IST" name="validLogin" finished-at="2025-09-30T12:43:15 IST" duration-ms="609" status="PASS">
+        <test-method signature="validLogin()[pri:4, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:24 IST" name="validLogin" finished-at="2025-10-01T16:49:25 IST" duration-ms="1379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:43:15 IST" name="close" finished-at="2025-09-30T12:43:15 IST" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:49:25 IST" name="close" finished-at="2025-10-01T16:49:26 IST" duration-ms="434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-09-30T12:44:31 IST" name="teardown" finished-at="2025-09-30T12:44:31 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:saucedemo.testclasses.LoginPageTest@5aa9e4eb]" started-at="2025-10-01T16:50:57 IST" name="teardown" finished-at="2025-10-01T16:50:57 IST" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
